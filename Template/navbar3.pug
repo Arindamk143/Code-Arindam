@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Designs</title>
+    link(rel='icon', sizes='16x16 32x32 48x48 64x64', href='../static/img/Favicon/navbar.png')
+    style
+        include ../static/css/Navsite.css
+</head>
+<body>
+    <div class="he1">
+        <h1>Welcome To Navbar Designs Page 3</h1>
+        <div class="b">
+            <button><a href="/Navbar4">Next Page</a></button>
+            <button><a href="/Navbar2">Previous Page</a></button>
+        </div>
+    </div>
+
+    <section class="n3">
+        <h2>Style 7 : SearchBar & Background Navbar</h2>
+        <img class="img-main" src="../static/img/Navbar/7.jpg" alt="loading">
+        <h1>Code For Style 7</h1>
+        <pre class="code3">
+            <code data-lang="html" class="main">
+                <span><</span><span>!DOCTYPE</span> <span>html></span>
+                <span><</span><span>html</span> <span>lang="en"></span>
+                <span><</span><span>head></span>
+                    <span><</span><span>meta</span> <span>charset="UTF-8"></span>
+                    <span><</span><span>meta</span> <span>http-equiv="X-UA-Compatible"></span>
+                    <span><</span><span>meta</span> <span>name="viewport"</span><span>content="width=device-width, initial-scale=1.0"></span>
+                    <span><</span><span>title></span> <span>TITLE</span> <span><</span><span>/</span><span>title></span>
+                <span><</span><span>/</span><span>head></span>
+                
+                <pre>
+                    <span><</span><span>style></span>
+                    |
+                    |*{
+                    |    padding: 0px;
+                    |    margin: 0px;
+                    |}
+                    |#navbar{
+                    |    height: 15vh;
+                    |    width: 100%;
+                    |    display: flex;
+                    |    flex-direction: row-reverse;
+                    |    align-items: center;
+                    |}
+                    |#navbar::before{
+                    |    content: "";
+                    |    height: 16vh;
+                    |    width: 100%;
+                    |    position: absolute;
+                    |    top: 0px;
+                    |    left: 0px;
+                    |    background: url("/img/navbar.jpg") no-repeat center center/cover;
+                    |    opacity: 0.9;
+                    |    z-index: -1;
+                    |}
+                    |#nav-main{
+                    |    display: flex;
+                    |    flex-direction: row-reverse;
+                    |}
+                    |#nav-main .list{
+                    |    list-style: none;
+                    |    padding: 0px 20px;
+                    |}
+                    |#navbar #nav-main .list a{
+                    |    text-decoration: none;
+                    |    color: rgb(255, 255, 255);
+                    |    font-size: 20px;
+                    |    font-weight: bold;
+                    |}
+                    |#nav-main h1{
+                    |    color: rgb(255, 255, 255);
+                    |    position: relative;
+                    |    top: 0px;
+                    |    right: 40vw;
+                    |    font-size: 2rem;
+                    |    font-weight: bold;
+                    |}
+                    |#search{
+                    |    border-style: none;
+                    |    border: 1px solid black;
+                    |    border-radius: 5px;
+                    |    position: relative;
+                    |    top: 0px;
+                    |    left: 12vw;
+                    |}
+                    |
+                    <span><</span><span>/</span><span>style></span>
+                </pre>
+                
+                <span><</span><span>/</span><span>body></span>
+                    <span><</span><span>nav</span> <span>id="navbar"></span>
+                        <span><</span><span>ul</span> <span>id="nav-main"></span>
+                            <span><</span><span>li</span> <span>class="list"></span><span><</span><span>a</span> <span>href="#"></span> <span>Home</span> <span><</span><span>/</span><span>a></span><span><</span><span>/</span><span>li></span>
+                            <span><</span><span>li</span> <span>class="list"></span><span><</span><span>a</span> <span>href="#"></span> <span>Services</span> <span><</span><span>/</span><span>a></span><span><</span><span>/</span><span>li></span>
+                            <span><</span><span>li</span> <span>class="list"></span><span><</span><span>a</span> <span>href="#"></span> <span>Contact Us</span> <span><</span><span>/</span><span>a></span><span><</span><span>/</span><span>li></span>
+                            <span><</span><span>li</span> <span>class="list"></span><span><</span><span>a</span> <span>href="#"></span> <span>About Me</span> <span><</span><span>/</span><span>a></span><span><</span><span>/</span><span>li></span>
+                            <span><</span><span>h1></span> <span>Code Arindam</span> <span><</span><span>/</span><span>h1></span>
+                            <span><</span><span>input</span> <span>id="search"</span> <span>type="text"</span> <span>placeholder="Search On website"</span><span>></span>
+                        <span><</span><span>/</span><span>ul></span>
+                    <span><</span><span>/</span><span>nav></span>
+                <span><</span><span>body></span>
+                <span><</span><span>/</span><span>html></span>
+            </code>
+        </pre>
+    </section>
+    <section class="n3">
+        <h2>Style 8 : DarkMode With SearchBar</h2>
+        <img class="img-main" src="../static/img/Navbar/8.jpg" alt="loading">
+        <h1>Code For Style 8</h1>
+        <pre class="code3">
+            <code data-lang="html" class="main">
+                <span><</span><span>!DOCTYPE</span> <span>html></span>
+                <span><</span><span>html</span> <span>lang="en"></span>
+                <span><</span><span>head></span>
+                    <span><</span><span>meta</span> <span>charset="UTF-8"></span>
+                    <span><</span><span>meta</span> <span>http-equiv="X-UA-Compatible"></span>
+                    <span><</span><span>meta</span> <span>name="viewport"</span><span>content="width=device-width, initial-scale=1.0"></span>
+                    <span><</span><span>title></span> <span>TITLE</span> <span><</span><span>/</span><span>title></span>
+                <span><</span><span>/</span><span>head></span>
+                
+                <pre>
+                    <span><</span><span>style></span>
+                    |
+                    |*{
+                    |    padding: 0px;
+                    |    margin: 0px;
+                    |}
+                    |#navbar{
+                    |    height: 15vh;
+                    |    width: 100%;
+                    |    display: flex;
+                    |    flex-direction: row;
+                    |    align-items: center;
+                    |    background-color: black;
+                    |}
+                    |#nav-main{
+                    |    display: flex;
+                    |    flex-direction: row;
+                    |}
+                    |#nav-main .list{
+                    |    list-style: none;
+                    |    padding: 0px 20px;
+                    |    margin-top: 5px;
+                    |}
+                    |#navbar #nav-main .list a{
+                    |    text-decoration: none;
+                    |    color: rgb(255, 255, 255);
+                    |    font-size: 22px;
+                    |    font-weight: bold;
+                    |}
+                    |#nav-main h1{
+                    |    color: rgb(43, 255, 0);
+                    |    position: relative;
+                    |    top: 0px;
+                    |    left: 10vw;
+                    |    font-size: 2rem;
+                    |    font-weight: bold;
+                    |    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    |}
+                    |#search{
+                    |    border-style: none;
+                    |    border: 1px solid black;
+                    |    border-radius: 5px;
+                    |    position: relative;
+                    |    top: 0px;
+                    |    left: 35vw;
+                    |}
+                    |
+                    <span><</span><span>/</span><span>style></span>
+                </pre>
+                
+                <span><</span><span>/</span><span>body></span>
+                    <span><</span><span>nav</span> <span>id="navbar"></span>
+                        <span><</span><span>ul</span> <span>id="nav-main"></span>
+                            <span><</span><span>li</span> <span>class="list"></span><span><</span><span>a</span> <span>href="#"></span> <span>Home</span> <span><</span><span>/</span><span>a></span><span><</span><span>/</span><span>li></span>
+                            <span><</span><span>li</span> <span>class="list"></span><span><</span><span>a</span> <span>href="#"></span> <span>Services</span> <span><</span><span>/</span><span>a></span><span><</span><span>/</span><span>li></span>
+                            <span><</span><span>li</span> <span>class="list"></span><span><</span><span>a</span> <span>href="#"></span> <span>Contact Us</span> <span><</span><span>/</span><span>a></span><span><</span><span>/</span><span>li></span>
+                            <span><</span><span>li</span> <span>class="list"></span><span><</span><span>a</span> <span>href="#"></span> <span>About Me</span> <span><</span><span>/</span><span>a></span><span><</span><span>/</span><span>li></span>
+                            <span><</span><span>h1></span> <span>Code Arindam</span> <span><</span><span>/</span><span>h1></span>
+                            <span><</span><span>input</span> <span>id="search"</span> <span>type="text"</span> <span>placeholder="Search On website"</span><span>></span>
+                        <span><</span><span>/</span><span>ul></span>
+                    <span><</span><span>/</span><span>nav></span>
+                <span><</span><span>body></span>
+                <span><</span><span>/</span><span>html></span>
+            </code>
+        </pre>
+    </section>
+    <section class="n3">
+        <h2>Style 8 : DarkMode & Img-Heading With SearchBar</h2>
+        <img class="img-main" src="../static/img/Navbar/9.jpg" alt="loading">
+        <h1>Code For Style 8</h1>
+        <pre class="code3">
+            <code data-lang="html" class="main">
+                <span><</span><span>!DOCTYPE</span> <span>html></span>
+                <span><</span><span>html</span> <span>lang="en"></span>
+                <span><</span><span>head></span>
+                    <span><</span><span>meta</span> <span>charset="UTF-8"></span>
+                    <span><</span><span>meta</span> <span>http-equiv="X-UA-Compatible"></span>
+                    <span><</span><span>meta</span> <span>name="viewport"</span><span>content="width=device-width, initial-scale=1.0"></span>
+                    <span><</span><span>title></span> <span>TITLE</span> <span><</span><span>/</span><span>title></span>
+                <span><</span><span>/</span><span>head></span>
+                
+                <pre>
+                    <span><</span><span>style></span>
+                    |
+                    |*{
+                    |    padding: 0px;
+                    |    margin: 0px;
+                    |}
+                    |#navbar{
+                    |    height: 18vh;
+                    |    width: 100%;
+                    |    display: flex;
+                    |    flex-direction: row;
+                    |    align-items: center;
+                    |    background-color: rgb(0, 0, 0);
+                    |}
+                    |#nav-main{
+                    |    display: flex;
+                    |    flex-direction: row;
+                    |}
+                    |#nav-main .list{
+                    |    list-style: none;
+                    |    padding: 0px 20px;
+                    |    margin-top: 35px;
+                    |}
+                    |#navbar #nav-main .list a{
+                    |    text-decoration: none;
+                    |    color: rgb(255, 255, 255);
+                    |    font-size: 22px;
+                    |    font-weight: bold;
+                    |}
+                    |#search{
+                    |    height: 5vh;
+                    |    width: 15vw;
+                    |    border-style: none;
+                    |    border: 1px solid rgb(255, 255, 255);
+                    |    border-radius: 5px;
+                    |    position: relative;
+                    |    top: 35px;
+                    |    left: 22vw;
+                    |}
+                    |#nav-main .set{
+                    |    display: flex;
+                    |    flex-direction: column;
+                    |    width: 25vw;
+                    |    height: 15vh;
+                    |    justify-content: center;
+                    |    align-items: center;
+                    |    position: relative;
+                    |    top: 0px;
+                    |    left: 10vw;
+                    |}
+                    |#nav-main .set img{
+                    |    width: 40px;
+                    |    height: 40px;
+                    |}
+                    |#nav-main .set h1{
+                    |    margin: 5px;
+                    |    color: rgb(255, 255, 255);
+                    |    font-size: 2rem;
+                    |    font-weight: bold;
+                    |    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    |}
+                    |
+                    <span><</span><span>/</span><span>style></span>
+                </pre>
+                
+                <span><</span><span>/</span><span>body></span>
+                    <span><</span><span>nav</span> <span>id="navbar"></span>
+                        <span><</span><span>ul</span> <span>id="nav-main"></span>
+                            <span><</span><span>li</span> <span>class="list"></span><span><</span><span>a</span> <span>href="#"></span> <span>Home</span> <span><</span><span>/</span><span>a></span><span><</span><span>/</span><span>li></span>
+                            <span><</span><span>li</span> <span>class="list"></span><span><</span><span>a</span> <span>href="#"></span> <span>Services</span> <span><</span><span>/</span><span>a></span><span><</span><span>/</span><span>li></span>
+                            <span><</span><span>li</span> <span>class="list"></span><span><</span><span>a</span> <span>href="#"></span> <span>Contact Us</span> <span><</span><span>/</span><span>a></span><span><</span><span>/</span><span>li></span>
+                            <span><</span><span>li</span> <span>class="list"></span><span><</span><span>a</span> <span>href="#"></span> <span>About Me</span> <span><</span><span>/</span><span>a></span><span><</span><span>/</span><span>li></span>
+                            <span><</span><span>div</span> <span>class="set"></span>
+                                <span><</span><span>img</span> <span>src="/logotype.jpg"></span>
+                                <span><</span><span>h1></span> <span>Code Arindam</span> <span><</span><span>/</span><span>h1></span>
+                            <span><</span><span>/</span><span>div></span>
+                            <span><</span><span>input</span> <span>id="search"</span> <span>type="text"</span> <span>placeholder="Search On website"</span><span>></span>
+                        <span><</span><span>/</span><span>ul></span>
+                    <span><</span><span>/</span><span>nav></span>
+                <span><</span><span>body></span>
+                <span><</span><span>/</span><span>html></span>
+            </code>
+        </pre>
+    </section>
+</body>
+</html>

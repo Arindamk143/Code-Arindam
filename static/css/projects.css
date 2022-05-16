@@ -1,0 +1,78 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+#project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    width: 100%;
+}
+#project::before {
+    content: "";
+    height: 99vh;
+    width: 100%;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    z-index: -1;
+    background: url("/static/img/project/giphy.gif") no-repeat center center/cover;
+    opacity: 1;
+}
+
+#project .python{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    height: 20vh;
+    background: url("/static/img/project/python.jpg") no-repeat center center/cover;
+    position: relative;
+    top: 6vh;
+    left: 0px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: -2px -2px 2px red;
+}
+#project .python a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-shadow: 3px 3px 3px black;
+    transition: all 1s ease-in-out;
+}
+#project .python a:hover{
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 3px white;
+}
+h1 {
+    color: black;
+    background-color: white;
+}
+
+@media only screen and (max-width: 415px){
+    #project {
+        height: 90vh;
+    }
+
+    #project .python{
+        width: 50vw;
+        height: 24vw;
+        position: relative;
+        top: 5vh;
+        left: 0px;
+    }
+    #project .python a{
+        font-size: 1rem;
+    }
+    #project .python a:hover{
+        font-size: 1.4rem;
+        color: rgb(0, 0, 0);
+        text-shadow: 3px 3px 3px white;
+    }
+}

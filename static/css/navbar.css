@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Beau+Rivage&family=Ms+Madi&family=Pacifico&family=Playfair+Display:ital,wght@1,800&family=Tapestry&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    height: 14vh;
+    width: 100%;
+    margin: 5px 0px;
+    opacity: 1;
+}
+
+#navbar ul {
+    margin-top: 25px;
+    display: flex;
+    height: 70px;
+    width: 100%;
+    flex-direction: row-reverse;
+}
+
+#navbar h2 {
+    position: relative;
+    margin-top: 25px;
+    top: 0px;
+    left: 65px;
+    width: 28vw;
+    font-family: 'Righteous', cursive;
+
+}
+#navbar .i1{
+    position: relative;
+    left: 60px;
+    top: 0px;
+    margin-top: 15px;
+}
+#navbar .i1 img{
+    height: 50px;
+    width: 70px;
+}
+
+
+#navbar ul .list {
+    list-style: none;
+}
+
+#navbar ul .list a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 8px 20px;
+    font-family: 'Righteous', cursive;
+    font-size: 20px;
+}
+
+#navbar ul .list a:hover {
+    color: rgb(255, 0, 0);
+    font-size: 1.2rem;
+}
+
+#navbar ul .list a:active{
+    color: greenyellow;
+}
+
+#navbar p {
+    display: none;
+}
+.burger {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.line {
+    width: 25px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+/* Phone Navbar */
+
+@media only screen and (max-width: 415px) {
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    body {
+        background-color: rgb(0, 0, 0);
+        display: block;
+    }
+
+    #navbar {
+        display: flex;
+        border-radius: 10px;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        background: none;
+        background-color: white;
+        height: 10vh;
+        width: 100%;
+        margin: 0px 0px;
+    }
+
+    #navbar ul {
+        margin-top: 9px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 2px;
+        right: 18px;
+        height: 42vh;
+        width: 48vw;
+        background-color: black;
+        align-items: center;
+        justify-content: center;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        transition: all 2s ease-in-out;
+    }
+
+    #navbar h2 {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin-top: 0px;
+        color: #000000;
+        font-size: 13px;
+        display: flex;
+        flex-direction: row;
+        width: 35%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    #navbar .i1 {
+        display: block;
+        height: 30px;
+        width: 50px;
+        margin: 0px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+
+    #navbar .i1 img {
+        display: block;
+        width: 60px;
+        height: 39px;
+        margin-top: 10px;
+    }
+
+    #navbar ul .list {
+        list-style: none;
+        margin: 4px 0px;
+    }
+
+    #navbar ul .list a {
+        text-decoration: none;
+        color: rgb(255, 174, 0);
+        padding: 5px 5px;
+        font-family: 'Righteous', cursive;
+        font-size: 15px;
+    }
+
+    #navbar ul .list a:hover {
+        color: rgb(255, 0, 0);
+        font-size: 12px;
+    }
+
+    .burger {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        right: 8%;
+        top: 15px;
+    }
+
+    .line {
+        width: 25px;
+        background-color: red;
+        height: 4px;
+        margin: 5px 3px;
+    }
+
+    .h-nav {
+        height: 32vh;
+    }
+
+    .v-class {
+        opacity: 0;
+    }
+
+}

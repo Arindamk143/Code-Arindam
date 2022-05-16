@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Tapestry&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.he1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.he1::before {
+    content: "";
+    width: 100%;
+    height: 32vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url("/static/img/Navbar/art/art3.jpg") no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.he1 h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    font-size: 3rem;
+    font-family: 'Tapestry', cursive;
+}
+
+.he1 button {
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    cursor: pointer;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0px 20px;
+}
+
+.he1 .b button a {
+    text-decoration: none;
+    color: aqua;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* FOR NAV2 PAGE */
+
+.n2 {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 260vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(211, 186, 42);
+}
+
+.n2 h2 {
+    text-align: center;
+    color: black;
+    margin: 10px 0px 30px 0px;
+    font-family: 'Macondo', cursive;
+}
+
+.n2 .img-main {
+    width: 100%;
+}
+
+.n2 h1 {
+    text-align: center;
+    color: black;
+    margin: 10px 0px 5px 0px;
+    font-size: 2rem;
+    font-family: 'Macondo', cursive;
+}
+
+.code2 {
+    width: 70%;
+    height: 220vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+
+/* FOR NAV1 PAGE */
+
+.n1 {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 190vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(211, 186, 42);
+}
+
+.n1 h2 {
+    text-align: center;
+    color: black;
+    margin: 10px 0px 30px 0px;
+    font-family: 'Macondo', cursive;
+}
+
+.n1 .img-main {
+    width: 100%;
+}
+
+.n1 h1 {
+    text-align: center;
+    color: black;
+    margin: 10px 0px 30px 0px;
+    font-size: 2rem;
+    font-family: 'Macondo', cursive;
+}
+
+.code1 {
+    width: 80%;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.main {
+    color: rgb(0, 255, 34);
+    font-size: 1rem;
+}
+
+/* for Nav3 CSS */
+
+.n3 {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 320vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(211, 186, 42);
+}
+
+.n3 h2 {
+    text-align: center;
+    color: black;
+    margin: 10px 0px 30px 0px;
+    font-family: 'Macondo', cursive;
+}
+
+.n3 .img-main {
+    width: 100%;
+}
+
+.n3 h1 {
+    text-align: center;
+    color: black;
+    margin: 10px 0px 5px 0px;
+    font-size: 2rem;
+    font-family: 'Macondo', cursive;
+}
+
+.code3 {
+    width: 77%;
+    height: 280vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+
+
+@media only screen and (max-width: 415px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .he1 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 20vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .he1::before {
+        content: "";
+        width: 100%;
+        height: 20vh;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background: url("/static/img/Navbar/art/art3.jpg") no-repeat center center/cover;
+        z-index: -1;
+        opacity: 0.9;
+    }
+
+    .he1 h1 {
+        text-align: center;
+        color: rgb(255, 255, 255);
+        margin: 10px;
+        font-size: 1rem;
+        font-family: 'Tapestry', cursive;
+    }
+
+    .he1 button {
+        width: 72px;
+        height: 30px;
+        background-color: black;
+        cursor: pointer;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .he1 .b button a {
+        text-decoration: none;
+        color: aqua;
+        font-size: 10px;
+    }
+
+
+    /* FOR NAV2 PAGE */
+
+    .n2 {
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 130vh;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(211, 186, 42);
+    }
+
+    .n2 h2 {
+        text-align: center;
+        color: black;
+        margin: 10px 0px 10px 0px;
+        font-size: 20px;
+    }
+
+    .n2 .img-main {
+        width: 100%;
+    }
+
+    .n2 h1 {
+        text-align: center;
+        color: black;
+        margin: 10px 0px 5px 0px;
+        font-size: 20px;
+    }
+
+    .code2 {
+        width: 100%;
+        height: 107vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+
+
+    /* FOR NAV1 PAGE */
+
+    .n1 {
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 80vh;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(211, 186, 42);
+    }
+
+    .n1 h2 {
+        text-align: center;
+        color: black;
+        margin: 10px 0px 10px 0px;
+        font-size: 15px;
+    }
+
+    .n1 .img-main {
+        width: 100%;
+        height: 20px;
+    }
+
+    .n1 h1 {
+        text-align: center;
+        color: black;
+        margin: 10px 0px 10px 0px;
+        font-size: 15px;
+    }
+
+    .code1 {
+        width: 100%;
+        height: 75vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+
+    .main {
+        color: rgb(0, 255, 34);
+        font-size: 7px;
+        margin-right: 0px;
+    }
+
+    /* For Nav3 Page */
+    .n3 {
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 150vh;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(211, 186, 42);
+    }
+
+    .n3 h2 {
+        font-size: 1rem;
+        text-align: center;
+        color: black;
+        margin: 10px 0px 30px 0px;
+        font-family: 'Macondo', cursive;
+    }
+
+    .n3 .img-main {
+        width: 100%;
+    }
+
+    .n3 h1 {
+        text-align: center;
+        color: black;
+        margin: 10px 0px 5px 0px;
+        font-size: 1rem;
+        font-family: 'Macondo', cursive;
+    }
+
+    .code3 {
+        width: 100%;
+        height: 127vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+}
