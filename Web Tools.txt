@@ -4,7 +4,7 @@ code1Arindam
 
 pm2 restart Codearindam
 pm2 save
-
+pm2 delete Codearindam
 Create A node App Ubuntu 20.04(PM2)
 https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-20-04
 

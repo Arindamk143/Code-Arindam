@@ -4,7 +4,7 @@ const fs = require("fs");
 const app = express();
 const bodyParser = require("body-parser")
 var mongoose = require("mongoose");
-// const hostname = '165.232.182.37';
+const hostname = '165.232.182.37';
 const port = 80;
 
 // EXPRESS SPECIFIC STUFF
@@ -73,6 +73,9 @@ app.get('/Navbar4', (req, res)=>{
 app.get('/Python', (req, res)=>{
     res.status(200).render('python.pug')
 })
+app.get('/Pygame', (req, res)=>{
+    res.status(200).render('pygame.pug')
+})
 
 app.post('/Contact', (req, res)=>{
     var name = req.body.name
@@ -98,10 +101,10 @@ app.post('/Contact', (req, res)=>{
 });
 
 // START THE SERVER
-// app.listen(port, hostname, () => {
-//     console.log(`Server running at http://${hostname}:${port}/`);
-//   });
-
-app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}/`);
+app.listen(port, hostname, () => {
+    console.log(`Server running at http://${hostname}:${port}/`);
   });
+
+// app.listen(port, () => {
+//     console.log(`Server running at http://localhost:${port}/`);
+//   });

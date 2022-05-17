@@ -1,0 +1,259 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: black;
+}
+#main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 248vh;
+}
+#main .hd{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+}
+#main .hd img{
+    height: 71px;
+    width: 80px;
+}
+#main .hd h1{
+    color: aliceblue;
+    margin: 10px;
+    font-size: 4rem;
+    text-shadow: 3px -4px 5px red;
+}
+#main .hd h3{
+    color: white;
+    position: absolute;
+    bottom: 77vh;
+    font-size: 2rem;
+    text-shadow: 3px -4px 5px red;
+}
+#main .bot{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+}
+#main .bot button{
+    margin: 5px 30px;
+    border-style: none;
+    height: 5vh;
+    width: 15vw;
+    box-shadow: 3px 4px 5px rgb(0, 17, 255);
+}
+#main .bot a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+#main .con{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+}
+#main .con p{
+    text-align: center;
+    color: rgb(255, 145, 0);
+    font-size: 2rem;
+}
+#main .con a{
+    margin-top: 5vh;
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    font-size: 1.5rem;
+}
+#main .con a:hover{
+    color: blueviolet;
+}
+#main .vid{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 33vh;
+}
+#main .vid h1{
+    font-size: 2rem;
+    color: rgb(21, 255, 0);
+    margin: 20px;
+}
+#main .vid video{
+    margin-top: 5vh;
+    height: 100vh;
+    width: 80%;
+}
+
+#main .source{
+    margin-top:25vh ;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 35vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#main .source h1{
+    color: rgb(0, 255, 0);
+    font-size: 2rem;
+}
+#main .source ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+
+#main .source ul li{
+    margin: 10px;
+    list-style: none;
+}
+#main .source ul li a{
+    text-decoration: none;
+    color: aqua;
+    font-size: 1.2rem;
+}
+#main .source ul li a:hover{
+    color:#ff9910
+}
+#main .custom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#main .custom h1{
+    color: rgb(81, 255, 0);
+    font-size: 2.5rem;
+}
+pre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+pre code{
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    background-color: rgb(195, 209, 209);
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 415px){
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    #main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 186vh;
+    }
+
+    #main .hd h3{
+        display: none;
+        /* color: white; */
+        /* position: absolute;
+        bottom: 75vh;
+        font-size: 15px;
+        text-shadow: 3px -4px 5px red; */
+    }
+    #main .hd {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #main .hd img{
+        height: 57px;
+        width: 57px;
+        margin-top: 1rem;
+    }
+    #main .vid{
+        margin-top: 9vh;
+    }
+    #main .vid h1 {
+        font-size: 1.3rem;
+        color: beige;
+        margin: 20px;
+    }
+    #main .vid video {
+        margin-top: 5vh;
+        width: 100%;
+    }
+    #main .con{
+        margin-top: 5vh;
+    }
+    #main .con p{
+        color: #ff9910;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    #main .bot{
+        margin-top: 1vh;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 17vh;
+        justify-content: center;
+        align-items: center;
+    }
+    #main .hd h1{
+        color: aliceblue;
+        margin: 10px;
+        font-size: 2rem;
+        text-align: center;
+    }
+    #main .source{
+        margin-top: 2vh;
+    }
+    #main .source h1{
+        text-align: center;
+        color: azure;
+        font-size: 1.5rem;
+    }
+
+    #main .custom h1{
+        text-align: center;
+        color: aliceblue;
+        font-size: 1.5rem;
+    }
+    pre{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+        margin-top: 5vh;
+    }
+    pre code{
+        font-size: 6px;
+        color: black;
+        background-color: #e9803c;
+        font-weight: bold;
+    }
+    #main .bot button {
+        margin: 5px 30px;
+        border-style: none;
+        height: 4vh;
+        width: 33vw;
+    }
+}
