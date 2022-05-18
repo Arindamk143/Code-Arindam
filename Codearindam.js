@@ -82,6 +82,15 @@ app.get('/Tkinter', (req, res)=>{
 app.get('/Calculator',(req, res)=>{
     res.status(200).render('temp/calculator.pug')
 })
+app.get('/Notepad', (req, res)=>{
+    res.status(200).render('temp/Notepad.pug')
+})
+app.get('/Biodata', (req, res)=>{
+    res.status(200).render('temp/Bio.pug')
+})
+app.get('/Turtle', (req, res)=>{
+    res.status(200).render('temp/turtle.pug')
+})
 app.post('/Contact', (req, res)=>{
     var name = req.body.name
     var email = req.body.email

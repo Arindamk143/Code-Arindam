@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=EB+Garamond&family=Koulen&family=Macondo&family=Orbitron&family=Playball&family=Tapestry&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: black;
+}
+#main .hd{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20vh;
+}
+#main .hd h4{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 3.5rem;
+    margin-top: 7px;
+    font-family: 'Cinzel', serif;
+    text-shadow: 3px -4px 3px blueviolet;
+}
+#main .hd img{
+    height: 50px;
+    width: 50px;
+    margin: 0px 10px;
+}
+
+#main .bot{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+}
+#main .bot button{
+    width: 15vw;
+    height: 5vh;
+    margin: 0px 20px;
+    background-color: rgb(255, 255, 255);
+}
+#main .bot button a{
+    text-decoration: none;
+    color: black;
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+}
+#main .tur{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+}
+#main .tur h1{
+    font-size: 2.5rem;
+    color: rgb(46, 255, 27);
+    margin: 10px 0px;
+}
+#main .tur p{
+    color: antiquewhite;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#main .sc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+}
+#main .sc h1{
+    font-size: 2rem;
+    color: rgb(1, 255, 1);
+    margin: 10px 0px;
+}
+#main .sc video{
+    width: 70vw;
+    height: 80vh;
+}
+#main .source{
+    margin-top:5vh ;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 35vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#main .source h1{
+    color: rgb(0, 255, 0);
+    font-size: 2rem;
+}
+#main .source ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+
+#main .source ul li{
+    margin: 10px;
+    list-style: none;
+}
+#main .source ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+}
+#main .source ul li a:hover{
+    color:#ff9910
+}
+#main .custom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#main .custom h1{
+    color: rgb(81, 255, 0);
+    font-size: 2.5rem;
+}
+pre{
+    margin: 3vh 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+pre code{
+    width:50vw;
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
+    background-color: rgb(195, 209, 209);
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 415px) {
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    #main .hd h4{
+        font-size: 2rem;
+    }
+    #main .hd img{
+        margin: 2px;
+    }
+    #main .bot{
+        height: 15vh;
+
+    }
+    #main .bot button{
+        width: 20vw;
+        height: 5vh;
+        margin: 0px 5px;
+        background-color: rgb(255, 255, 255);
+    }
+    #main .tur h1{
+        font-size: 1.5rem;
+        color: rgb(46, 255, 27);
+        margin: 10px 0px;
+    }
+    #main .tur p{
+        color: antiquewhite;
+        font-size: 1rem;
+        text-align: center;
+    }
+    #main .sc{
+        height: 40vh;
+    }
+    #main .sc video{
+        width: 90vw;
+        height: 80vh;
+    }
+    #main .source{
+        margin-top:3vh ;
+        height: 35vh;
+
+    }
+    #main .source h1{
+        color: rgb(0, 255, 0);
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    #main .custom h1{
+        color: rgb(81, 255, 0);
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    pre{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+        margin-top: 5vh;
+    }
+    pre code{
+        width: 90vw;
+        font-size: 11px;
+        color: black;
+        background-color: #e9803c;
+        font-weight: bold;
+    }
+}
