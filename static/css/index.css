@@ -146,7 +146,7 @@ aside{
     font-family: 'Oleo Script Swash Caps', cursive;
 }
 
-.test{
+#Quotes .test{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -179,7 +179,7 @@ aside{
 
     #index::before {
         content: "";
-        background: url('/static/img/Phone/phone-index.jpg') no-repeat center center/cover;
+        background: url('/static/img/2.jpg') no-repeat center center/cover;
         position: absolute;
         top: 70px;
         left: 0px;
@@ -250,7 +250,8 @@ aside{
     #Quotes {
         background-color: black;
         display: block;
-        margin-top: 100px;
+        margin-top: 84px;
+        height: 60vh;
     }
 
     .quotes {
@@ -292,7 +293,6 @@ aside{
         padding: 5px;
         margin: 5px;
         font-family: 'Oleo Script Swash Caps', cursive;
-
     }
 
     .quotes .q2 p {
@@ -303,7 +303,7 @@ aside{
         font-family: 'Oleo Script Swash Caps', cursive;
     }
 
-    .test {
+    #Quotes .test {
         display: flex;
         align-items: center;
         justify-content: center;

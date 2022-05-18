@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tkinter Calculator</title>
+    link(rel='icon', sizes='16x16 32x32 48x48 64x64', href='../../static/img/Favicon/favicon.ico')
+    style
+        include ../../static/css/Python/tk-cal.css
+</head>
+
+<body>
+    <section id="main">
+        <h4>Welcome To Tkinter GUI Calculator</h4>
+        <div class="bot">
+            <button><a href="/Python">Project Page</a></button>
+            <button><a href="/Tkinter">GUI Page</a></button>
+            <button><a href="/Pygame">Pygame Page</a></button>
+            <button><a href="/">Home Page</a></button>
+        </div>
+        <hr>
+        <div class="sc">
+            <h1>How This Is Look Like</h1>
+            <video controls>
+                <source src="../static/vid/calculator.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="source">
+            <h1> This Py Game Source Code Download Below</h1>
+            <ul>
+                <li>
+                    <a href="https://github.com/Arindamk143">GITHUB LINK</a>
+                </li>
+                <li>
+                    <a href="../static/projects/Calculator.zip" download> Download Zip File</a>
+                </li>
+            </ul>
+        </div>
+        <div class="custom">
+            <h1>IF You Want Custom Code So Copy Below Code</h1>
+        </div>
+    </section>
+    <pre>
+    <code>
+    |    from tkinter import *
+    |
+    |    root = Tk()
+    |    root.geometry("400x650")
+    |    root.title("Arindam Calculator")
+    |    root.wm_iconbitmap("icon.ico")
+    |
+    |    def click(event):
+    |    global calvar
+    |    text = event.widget.cget("text")
+    |    print(text)
+    |    if text == "=":
+    |        if calvar.get().isdigit():
+    |            value = int(calvar.get())
+    |        else:
+    |            try:
+    |                value = eval(calvar.get())
+    |
+    |            except Exception as e:
+    |                print(e)
+    |                value = "Error"
+    |
+    |
+    |        calvar.set(value)
+    |        root.update()
+    |
+    |    elif text == "C":
+    |        calvar.set("")
+    |        root.update()
+    |    else:
+    |        calvar.set(calvar.get()+ text)
+    |
+    |    # At First Passing A Entry with Variables
+    |    calvar = StringVar()
+    |    calvar.set("")
+    |
+    |Entry(root,textvariable=calvar,font="Lucida 50 bold")
+    |.pack(fill=X,ipady=5)
+    |
+    |    # Craeting Frame and pack Bottoms
+    |    f1 = Frame(root,bg="grey")
+    |    f1.pack()
+    |    B = Button(f1,text="9",font = "lucida 40 bold")
+    |    B.pack(side=LEFT,padx=15)
+    |    B.bind("<Button-1>",click)
+    |    B = Button(f1,text="8",font = "lucida 40 bold")
+    |    B.pack(side=LEFT,padx=15)
+    |    B.bind("<Button-1>",click)
+    |    B = Button(f1,text="7",font = "lucida 40 bold")
+    |    B.pack(side=LEFT,padx=15)
+    |    B.bind("<Button-1>",click)
+    |    B = Button(f1,text="6",font = "lucida 40 bold")
+    |    B.pack(side=LEFT,padx=15)
+    |    B.bind("<Button-1>",click)
+    |
+    |    f1 = Frame(root,bg="grey")
+    |    f1.pack()
+    |    B = Button(f1,text="5",font = "lucida 40 bold")
+    |    B.pack(side=LEFT,padx=15)
+    |    B.bind("<Button-1>",click)
+    |    B = Button(f1,text="4",font = "lucida 40 bold")
+    |    B.pack(side=LEFT,padx=15)
+    |    B.bind("<Button-1>",click)
+    |    B = Button(f1,text="3",font = "lucida 40 bold")
+    |    B.pack(side=LEFT,padx=15)
+    |    B.bind("<Button-1>",click)
+    |    B = Button(f1,text="2",font = "lucida 40 bold")
+    |    B.pack(side=LEFT,padx=15)
+    |    B.bind("<Button-1>",click)
+    |
+    |    f1 = Frame(root,bg="grey")
+    |    f1.pack()
+    |    B = Button(f1,text="1",font = "lucida 40 bold")
+    |    B.pack(side=LEFT,padx=15)
+    |    B.bind("<Button-1>",click)
+    |    B = Button(f1,text="0",font = "lucida 40 bold")
+    |    B.pack(side=LEFT,padx=15)
+    |    B.bind("<Button-1>",click)
+    |    B = Button(f1,text="C",font = "lucida 40 bold")
+    |    B.pack(side=LEFT,padx=15)
+    |    B.bind("<Button-1>",click)
+    |    B = Button(f1,text="=",font = "lucida 40 bold")
+    |    B.pack(side=LEFT,padx=15)
+    |    B.bind("<Button-1>",click)
+    |
+    |    f1 = Frame(root,bg="grey")
+    |    f1.pack()
+    |    B = Button(f1,text="+",font = "lucida 40 bold")
+    |    B.pack(side=LEFT,padx=15)
+    |    B.bind("<Button-1>",click)
+    |    B = Button(f1,text="/",font = "lucida 40 bold")
+    |    B.pack(side=LEFT,padx=15)
+    |    B.bind("<Button-1>",click)
+    |    B = Button(f1,text="-",font = "lucida 40 bold")
+    |    B.pack(side=LEFT,padx=15)
+    |    B.bind("<Button-1>",click)
+    |    B = Button(f1,text="*",font = "lucida 40 bold")
+    |    B.pack(side=LEFT,padx=15)
+    |    B.bind("<Button-1>",click)
+    |
+    |    root.mainloop()
+    | 
+    </code>
+    </pre>
+</body>
+
+</html>

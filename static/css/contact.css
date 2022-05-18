@@ -65,6 +65,11 @@ input[type="submit"] {
     background-color: rgb(89, 60, 255);
     cursor: pointer;
 }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
 
 /* For Phone CSS */
 

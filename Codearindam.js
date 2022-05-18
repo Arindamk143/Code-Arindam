@@ -76,7 +76,12 @@ app.get('/Python', (req, res)=>{
 app.get('/Pygame', (req, res)=>{
     res.status(200).render('pygame.pug')
 })
-
+app.get('/Tkinter', (req, res)=>{
+    res.status(200).render('temp/tkinter.pug')
+})
+app.get('/Calculator',(req, res)=>{
+    res.status(200).render('temp/calculator.pug')
+})
 app.post('/Contact', (req, res)=>{
     var name = req.body.name
     var email = req.body.email
@@ -104,7 +109,3 @@ app.post('/Contact', (req, res)=>{
 app.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
   });
-
-// app.listen(port, () => {
-//     console.log(`Server running at http://localhost:${port}/`);
-//   });
